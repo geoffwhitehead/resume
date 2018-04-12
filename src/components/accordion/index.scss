@@ -13,6 +13,7 @@
         background-color: $BACKGROUND_COLOR_STD;
         z-index: 1;
         overflow: hidden;
+        box-shadow: $BOX_SHADOW
     }
     .cp-circle-closed {
         overflow: hidden;

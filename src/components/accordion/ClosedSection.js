@@ -33,9 +33,7 @@ const ClosedSection = ({
         onClick={() => goToSection(current)}
       >
         {/* <ReactAccordionIcon valid={section.valid} /> */}
-        <div>
-          {section.closed}
-        </div>
+        <div>{section.closed}</div>
         {/* {section.valid && (
           <a
             className={"cp-accordion-hover"}

@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { NavbarDisplay } from "components/navbar";
-import { Accordion } from "components/accordion"
+import { Accordion } from "components/accordion";
 import { Container } from "semantic-ui-react";
-import {
-  Education, 
-  Experience, 
-  Projects, 
-  OpenSource
-} from "pages"
+import { Education, Experience, Projects, OpenSource } from "pages";
 
 import "semantic-ui-css/semantic.min.css";
-import "./App.scss"
-
+import "./App.scss";
 
 export class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentSection: -1
+      currentSection: 0
     };
     this.handleOnGoToSection = this.handleOnGoToSection.bind(this);
   }
@@ -27,32 +21,31 @@ export class App extends Component {
     });
   }
   render() {
-    
     const accordionSections = [
       {
         id: 1,
         closed: "Experience",
-        open: <Experience/>,
+        open: <Experience />
       },
       {
         id: 2,
         closed: "Education",
-        open: <Education />,
+        open: <Education />
       },
       {
         id: 3,
         closed: "Open Source",
-        open: <OpenSource />,
+        open: <OpenSource />
       },
       {
         id: 4,
         closed: "Projects",
-        open: <Projects />,
-      },
+        open: <Projects />
+      }
     ];
     return (
       <div>
-        <NavbarDisplay/>
+        <NavbarDisplay />
         <Container>
           <div className="app">
             <Accordion
@@ -60,7 +53,7 @@ export class App extends Component {
               currentSection={this.state.currentSection}
               onGoToSection={this.handleOnGoToSection}
               includeStepNumbers
-              />
+            />
           </div>
         </Container>
       </div>

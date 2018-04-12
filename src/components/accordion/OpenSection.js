@@ -54,7 +54,7 @@ class OpenSection extends React.PureComponent {
               onClick={onNextSection}
               className="cp-accordion-next"
             >
-              Continue
+              Next
             </Button>
           )}
         </div>

@@ -6,15 +6,15 @@
 }
 .accordion-enter-active {
   opacity: 1;
-  max-height: 400px;
-  transition: max-height 1250ms ease-in, opacity 1250ms ease-in ;
+  max-height: 1000px;
+  transition: max-height 1000ms ease-in, opacity 1000ms ease-in ;
 }
 .accordion-exit {
   opacity: 1;
-  max-height: 400px;
+  max-height: 1000px;
 }
 .accordion-exit-active {
   opacity: 0;
   max-height: 0px;
-  transition: max-height 1250ms ease-in, opacity 1250ms ease-in;
+  transition: max-height 1000ms ease-in, opacity 1000ms ease-in;
 }

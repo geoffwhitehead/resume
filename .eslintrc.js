@@ -14,18 +14,9 @@ module.exports = {
     "browser": true,
     "node": true,
     "jquery": true,
-    "jest": true,
-    "jest/globals": true
-  },
-  "globals": {
-    "expect": true,
-    "shallow": false,
-    "render": false,
-    "mount": false
   },
   "plugins": [
     "react",
-    "jest",
     "import"
   ],
   "root": true,

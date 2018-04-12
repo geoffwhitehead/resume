@@ -40,6 +40,7 @@ export class Accordion extends React.PureComponent {
             scrollElementName="openSectionScrollElement"
             scrollOnMount={true}
             delay={300}
+            offset={-200}
           >
             {() => (
               <OpenSection
@@ -68,7 +69,7 @@ export class Accordion extends React.PureComponent {
         <TransitionGroup className="accordion">
           <CSSTransition
             classNames="accordion"
-            timeout={1250}
+            timeout={1000}
             key={`section-${section.id}-${state}`}
           >
             {sec}

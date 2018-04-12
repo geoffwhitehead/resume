@@ -1,11 +1,47 @@
-import React from 'react';
+import React from "react";
+import { List, Icon } from "semantic-ui-react";
 
 export const Education = () => {
   return (
-    <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-    </p>
+    <List divided relaxed>
+      <List.Item>
+        <List.Icon name="graduation" size="large" verticalAlign="middle" />
+        <List.Content>
+          <List.Header as="h3">
+            2016 Newcastle University - Computer Science - 1st
+          </List.Header>
+          <List.Description as="p">
+            Programming 1, programming 2, computer architecture, maths for
+            computer science, web design, software engineering, software
+            engineering professional, software engineering team project,
+            algorithm design, database tech, operating systems, computer
+            networks, distributed systems, web tech, C++ programming,
+            simulations (C++), graphics (C++), web construction and management,
+            ubiquitous computing, dissertation in data science
+          </List.Description>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon name="student" size="large" verticalAlign="middle" />
+        <List.Content>
+          <List.Header as="h3">
+            2013 Newcastle College - Engineering - Triple Distinction*
+          </List.Header>
+          <List.Description as="p">
+            Maths for engineering, mechanical principles and applications,
+            properties and applications of engineering materials, applications
+            of computer numerical control, principles and applicatons of
+            electronic devices and circuits, communicatons for engineering tech,
+            electrical and electronic principles, engineering design, further
+            mech principles and applications, electro and pneumatic and
+            hydraulic systems and devices, engineering drawing for tech,
+            computer aided drafting in engineering, selecting and using
+            programmable controllers, further maths for technicians, electrical
+            technology
+          </List.Description>
+          <Icon name="trophy" color="yellow" />Student of the year award
+        </List.Content>
+      </List.Item>
+    </List>
   );
 };
