@@ -11,11 +11,11 @@ const ClosedSection = ({
   goToSection,
   includeStepNumbers
 }) => (
-  <div className={`cp-section-closed`}>
+  <div className={`section-closed`}>
     {includeStepNumbers && (
-      <div className="cp-accordion-left">
+      <div className="accordion-left">
         <hr width="1" size="500" className={current === 0 ? "hide" : ""} />
-        <div className="cp-circle-closed">
+        <div className="circle-closed">
           {/* {section.valid && <i className="fa fa-check" />}
           {!section.valid && <i className="fa fa-times" />} */}
         </div>
@@ -27,16 +27,16 @@ const ClosedSection = ({
       </div>
     )}
 
-    <div className="cp-accordion-right">
+    <div className="accordion-right">
       <div
-        className={"cp-accordion-hover"}
+        className={"accordion-hover"}
         onClick={() => goToSection(current)}
       >
         {/* <ReactAccordionIcon valid={section.valid} /> */}
         <div>{section.closed}</div>
         {/* {section.valid && (
           <a
-            className={"cp-accordion-hover"}
+            className={"accordion-hover"}
             onClick={() => goToSection(current)}
           >
             edit

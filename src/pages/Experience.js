@@ -17,7 +17,7 @@ export const Experience = () => {
             management, and user profiles. Sole front end developer of the app
             from creation to release in April 2018. Implemented CI / CD build
             process using CircleCI, entire testing framework, and all tech
-            decisions. Liased directly with designers and product lead.
+            decisions. Liased directly with back-end, designers, and product lead.
           </List.Description>
           <List.List className="gold">
             <List.Item>Tech: React, Redux, Sagas, React Router 4</List.Item>

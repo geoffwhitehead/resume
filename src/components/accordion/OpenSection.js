@@ -28,13 +28,13 @@ class OpenSection extends React.PureComponent {
     } = this.props;
 
     return (
-      <div className="cp-section-open show">
+      <div className="section-open show">
         <Element name="openSectionScrollElement" />
         {includeStepNumbers && (
-          <div className="cp-accordion-left">
+          <div className="accordion-left">
             {}
             <hr width="1" size="500" className={current == 0 ? "hide" : ""} />
-            <div className="cp-circle-open">
+            <div className="circle-open">
               {" "}
               <strong>{current + 1}</strong> of {total}
             </div>
@@ -45,14 +45,13 @@ class OpenSection extends React.PureComponent {
             />
           </div>
         )}
-        <div className="cp-accordion-right">
+        <div className="accordion-right">
           {/* <ReactAccordionIcon open /> */}
           {section.open}
           {current + 1 !== total && (
             <Button
               // disabled={!section.valid}
               onClick={onNextSection}
-              className="cp-accordion-next"
             >
               Next
             </Button>

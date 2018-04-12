@@ -1,7 +1,7 @@
 @import '../../styles/styles.scss';
 
-.cp-react-accordion {
-    .cp-circle-open {
+.accordion-wrapper {
+    .circle-open {
         margin: 0 auto;
         width:80px;
         height:80px;
@@ -15,7 +15,7 @@
         overflow: hidden;
         box-shadow: $BOX_SHADOW
     }
-    .cp-circle-closed {
+    .circle-closed {
         overflow: hidden;
         margin: 0 auto;
         width:40px;
@@ -35,7 +35,7 @@
         }
     }
     
-    .cp-section-open {
+    .section-open {
         overflow: hidden;
         background-color: white;
         display: flex;
@@ -53,7 +53,7 @@
         z-index: 50;
     }
     
-    .cp-section-closed {
+    .section-closed {
         overflow: hidden;
         background-color: transparent;
         display: flex;
@@ -69,23 +69,23 @@
         }
     }
     
-    .cp-accordion-left {
+    .accordion-left {
        min-width: 100px;
        strong {
            font-size: 26px;
        }
     }
-    .cp-accordion-right {
+    .accordion-right {
        padding: 15px 15px 15px 15px;
        width: 100%;
        position: relative;
        & > button {
            margin-top:  20px;
        }
-       .cp-accordion-hover:hover{
+       .accordion-hover:hover{
            cursor: pointer;
        }
-       .cp-accordion-icon {
+       .accordion-icon {
             height: 30px;
             width: 30px;
             position: absolute;

@@ -81,7 +81,7 @@ export class Accordion extends React.PureComponent {
 
   render() {
     const renderedSections = this.renderedSections();
-    return <div className="cp-react-accordion">{renderedSections}</div>;
+    return <div className="accordion-wrapper">{renderedSections}</div>;
   }
 }
 

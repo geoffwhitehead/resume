@@ -6,7 +6,7 @@
 // export const ReactAccordionIcon = ({ valid, open }) => {
 //   return (
 //     <img
-//       className="cp-accordion-icon"
+//       className="accordion-icon"
 //       src={`${open ? svgAdd : valid ? svgComplete : svgIncomplete}`}
 //     />
 //   );
