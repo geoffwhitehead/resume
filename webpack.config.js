@@ -1,6 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
+
 module.exports = {
+  resolve: {
+    modules: ["src", "node_modules"],
+    extensions: ["*", ".js", ".jsx", ".json"]
+  },
   module: {
     rules: [
       {
@@ -20,9 +26,79 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        test: /\.eot(\?v=\d+.\d+.\d+)?$/,
+        use: ["file-loader"]
       },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10000,
+              mimetype: "application/font-woff"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.[ot]tf(\?v=\d+.\d+.\d+)?$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10000,
+              mimetype: "application/octet-stream"
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]"
+            }
+          }
+        ]
+      },
+      {
+        test: /(\.css|\.scss|\.sass)$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              ident: "postcss",
+              plugins: () => [
+                require("autoprefixer")({
+                  browsers: ["last 2 versions"]
+                })
+              ],
+              sourceMap: true
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              includePaths: [path.resolve(__dirname, "src", "scss")],
+              sourceMap: true
+            }
+          }
+        ]
+      },
+      // {
+      //   test: /(\.css|\.scss|\.sass)$/,
+      //   use: [MiniCssExtractPlugin.loader, "css-loader"]
+      // },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         use: [
