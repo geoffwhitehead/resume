@@ -1,22 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { ReactAccordionIcon } from "./AccordionIcon";
-import Lottie from 'react-lottie';
-import * as animationData from './round.json'
+import Lottie from "react-lottie";
+import * as animationData from "assets/lottie/round.json";
 
 import "./index";
 
-// let animation = bodymovin.loadAnimation({
-//   container: document.getElementById('lottie'), // Required
-//   renderer: 'svg', // Required
-//   loop: true, // Optional
-//   autoplay: true, // Optional
-//   path: closedAnimation // Required
-// });
 
 export default class ClosedSection extends React.Component {
- 
-
   render() {
     const {
       section,
@@ -24,7 +14,7 @@ export default class ClosedSection extends React.Component {
       total,
       goToSection,
       includeStepNumbers
-    } = this.props
+    } = this.props;
 
     const defaultOptions = {
       loop: true,
@@ -37,31 +27,24 @@ export default class ClosedSection extends React.Component {
 
     return (
       <div className={`section-closed`}>
-      {includeStepNumbers && (
-        <div className="accordion-left">
-          <hr width="1" size="500" className={current === 0 ? "hide" : ""} />
-          <div className="circle-closed" id="lottie">
-            {/* {section.valid && <i className="fa fa-check" />}
-            {!section.valid && <i className="fa fa-times" />} */}
-                        <Lottie options={defaultOptions}
-              height={60}
-              width={60}
-              />
-            
+        {includeStepNumbers && (
+          <div className="accordion-left">
+            <hr width="1" size="500" className={current === 0 ? "hide" : ""} />
+            <div className="circle-closed" id="lottie">
+              <Lottie options={defaultOptions} height={60} width={60} />
+            </div>
+            <hr
+              width="1"
+              size="500"
+              className={current === total - 1 ? "hide" : ""}
+            />
           </div>
-          <hr
-            width="1"
-            size="500"
-            className={current === total - 1 ? "hide" : ""}
-          />
-        </div>
-        
-      )}
+        )}
 
-      <div className="accordion-right" onClick={() => goToSection(current)}>
-        {section.closed}
+        <div className="accordion-right" onClick={() => goToSection(current)}>
+          {section.closed}
+        </div>
       </div>
-    </div>
     );
   }
 }

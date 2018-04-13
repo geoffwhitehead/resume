@@ -17,7 +17,8 @@ export const Experience = () => {
             management, and user profiles. Sole front end developer of the app
             from creation to release in April 2018. Implemented CI / CD build
             process using CircleCI, entire testing framework, and all tech
-            decisions. Liased directly with back-end, designers, and product lead.
+            decisions. Liased directly with back-end, designers, and product
+            lead.
           </List.Description>
           <List.List className="gold">
             <List.Item>Tech: React, Redux, Sagas, React Router 4</List.Item>
@@ -58,7 +59,15 @@ export const Experience = () => {
             Newcastle upon Tyne, Durham, Morpeth
           </List.Description>
           <List.Description as="p">
-            Still working on a part time basis as and when required. Worked with owners to build 3 successful restaurants. From opening the first restaurant in Morpeth in 2010 to the 3rd restaurant in Newcastle in 2016. Involved in managing restaurants, marketing, design (Abobe photoshop - created all material including menus), all photography, systems and procedures, stock control and suppliers, renovations, restaurant theme and design, CCTV install in all 3 restaurants, represented Durham for licencing and planning, and general advice and guidance.
+            Still working on a part time basis as and when required. Worked with
+            owners to build 3 successful restaurants. From opening the first
+            restaurant in Morpeth in 2010 to the 3rd restaurant in Newcastle in
+            2016. Involved in managing restaurants, marketing, design (Abobe
+            photoshop - created all material including menus), all photography,
+            systems and procedures, stock control and suppliers, renovations,
+            restaurant theme and design, CCTV install in all 3 restaurants,
+            represented Durham for licencing and planning, and general advice
+            and guidance.
           </List.Description>
           <List.List className="gold">
             <List.Item>
