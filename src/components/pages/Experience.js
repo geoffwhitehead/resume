@@ -58,9 +58,9 @@ export const Experience = () => {
             Newcastle upon Tyne, Durham, Morpeth
           </List.Description>
           <List.Description as="p">
-            Worked with my fiance from to build 3 successful restaurants. From
+            Worked with owners to build 3 successful restaurants. From
             opening the first restaurant in Morpeth in 2010 to the 3rd
-            restaurant in Newcastle in 2016.
+            restaurant in Newcastle in 2016. Still working on a part time basis as and when the owners need my help
           </List.Description>
           <List.List className="gold">
             <List.Item>

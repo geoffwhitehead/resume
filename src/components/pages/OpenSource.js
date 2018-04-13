@@ -17,10 +17,18 @@ export const OpenSource = () => {
             A minimal library for rendering alert / toasts / popups /
             notifications in react apps.
           </List.Description>
-          <Icon name="github" />
-          <a href={"https://github.com/reactiness/react-alerts-lite"}>
-            github.com/reactiness/react-alerts-lite
-          </a>
+          <List.Description as="p">
+            <Icon name="github" />
+            <a href={"https://github.com/reactiness/react-alerts-lite"}>
+              github.com/reactiness/react-alerts-lite
+            </a>
+          </List.Description>
+          <List.Description as="p">
+            <Icon name="code" />
+            <a href={"https://www.npmjs.com/package/react-alerts-lite"}>
+              npmjs.com/package/react-alerts-lite
+            </a>
+          </List.Description>
         </List.Content>
       </List.Item>
     </List>

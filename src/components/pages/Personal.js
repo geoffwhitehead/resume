@@ -42,7 +42,7 @@ export const Personal = () => {
       </Grid.Row>
       <Grid.Row>
         <h3>
-          Experienced software developer focused in React, Redux, Sagas, Jest, Enzyme, CI, and CD.
+          Experienced software developer focused in Node, React, Redux, Sagas, Jest, Enzyme, CI, and CD.
         </h3>
       </Grid.Row>
     </Grid>

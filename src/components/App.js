@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavbarDisplay } from "components/navbar";
 import { Accordion } from "components/accordion";
 import { Container } from "semantic-ui-react";
-import { Education, Experience, Projects, OpenSource, Personal } from "pages";
+import { Education, Experience, Projects, OpenSource, Personal } from "components/pages";
 
 import "semantic-ui-css/semantic.min.css";
 import "./App.scss";
