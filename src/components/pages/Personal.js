@@ -22,10 +22,10 @@ export class Personal extends React.Component {
     return (
       <Grid columns={2} centered>
         <Grid.Row>
-          <Grid.Column width={6}>
+          <Grid.Column width={8} style={{ textAlign: "-webkit-right" }}>
             <Image src={Avatar} size="medium" rounded />
           </Grid.Column>
-          <Grid.Column width={4} verticalAlign="middle">
+          <Grid.Column width={8} verticalAlign="middle">
             <List>
               <List.Item>
                 <List.Icon name="user" />

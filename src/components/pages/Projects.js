@@ -76,8 +76,8 @@ export const Projects = () => {
             This was created as an alternative to the problems encountered using
             dynamic casting for collision detection with shape types. The
             visitor design pattern is one of the behavioural design patterns
-            from the Gang of Four{" "}
-            <a href={"http://www.blackwasp.co.uk/Visitor.aspx"} />).
+            from the Gang of Four.
+            <a href={"http://www.blackwasp.co.uk/Visitor.aspx"}>blackwasp.co.uk/Visitor.aspx</a>.
           </List.Description>
         </List.Content>
       </List.Item>

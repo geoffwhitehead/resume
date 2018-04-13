@@ -50,7 +50,6 @@ export class Accordion extends React.PureComponent {
       if (state === "open") {
         sec = (
           <WithScrolling
-            key={`open-${section.id}`}
             scrollElementName="openSectionScrollElement"
             scrollOnMount={true}
             delay={300}
@@ -71,7 +70,6 @@ export class Accordion extends React.PureComponent {
         sec = (
           <ClosedSection
             changingSection={this.state.changingSection}
-            key={`closed-${section.id}`}
             section={section}
             current={i}
             total={sections.length}
