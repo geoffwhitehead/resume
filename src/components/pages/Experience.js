@@ -58,9 +58,7 @@ export const Experience = () => {
             Newcastle upon Tyne, Durham, Morpeth
           </List.Description>
           <List.Description as="p">
-            Worked with owners to build 3 successful restaurants. From
-            opening the first restaurant in Morpeth in 2010 to the 3rd
-            restaurant in Newcastle in 2016. Still working on a part time basis as and when the owners need my help
+            Still working on a part time basis as and when required. Worked with owners to build 3 successful restaurants. From opening the first restaurant in Morpeth in 2010 to the 3rd restaurant in Newcastle in 2016. Involved in managing restaurants, marketing, design (Abobe photoshop - created all material including menus), all photography, systems and procedures, stock control and suppliers, renovations, restaurant theme and design, CCTV install in all 3 restaurants, represented Durham for licencing and planning, and general advice and guidance.
           </List.Description>
           <List.List className="gold">
             <List.Item>
