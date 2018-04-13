@@ -24,7 +24,7 @@ export class App extends Component {
     const accordionSections = [
       {
         id: 1,
-        closed: "Experience",
+        closed: <h3>Experience</h3>,
         open: <Experience />
       },
       {

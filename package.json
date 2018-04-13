@@ -9,8 +9,10 @@
     "lint-fix": "./node_modules/eslint/bin/eslint.js --fix ./src"
   },
   "dependencies": {
+    "bodymovin": "^4.13.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-lottie": "^1.1.0",
     "react-scroll": "^1.7.8",
     "react-transition-group": "^2.3.0"
   },

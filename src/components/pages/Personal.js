@@ -1,8 +1,25 @@
 import React from "react";
 import { Grid, Image, List, Icon } from "semantic-ui-react";
 import Avatar from "assets/avatar.jpeg";
+import Lottie from 'react-lottie';
+import * as animationData from './round.json'
 
-export const Personal = () => {
+export class Personal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isStopped: false, isPaused: false};
+  }
+  render() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+
+
   return (
     <Grid columns={2} centered>
     <Grid.Row>
@@ -45,7 +62,16 @@ export const Personal = () => {
           Experienced software developer focused in Node, React, Redux, Sagas, Jest, Enzyme, CI, and CD.
         </h3>
       </Grid.Row>
+      <Grid.Row>
+      <Lottie options={defaultOptions}
+              height={400}
+              width={400}
+              isStopped={this.state.isStopped}
+              isPaused={this.state.isPaused}/>
+            
+      </Grid.Row>
     </Grid>
   )
+}
   
 };

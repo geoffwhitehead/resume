@@ -1,51 +1,70 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { ReactAccordionIcon } from "./AccordionIcon";
+import Lottie from 'react-lottie';
+import * as animationData from './round.json'
 
 import "./index";
 
-const ClosedSection = ({
-  section,
-  current,
-  total,
-  goToSection,
-  includeStepNumbers
-}) => (
-  <div className={`section-closed`}>
-    {includeStepNumbers && (
-      <div className="accordion-left">
-        <hr width="1" size="500" className={current === 0 ? "hide" : ""} />
-        <div className="circle-closed">
-          {/* {section.valid && <i className="fa fa-check" />}
-          {!section.valid && <i className="fa fa-times" />} */}
-        </div>
-        <hr
-          width="1"
-          size="500"
-          className={current === total - 1 ? "hide" : ""}
-        />
-      </div>
-    )}
+// let animation = bodymovin.loadAnimation({
+//   container: document.getElementById('lottie'), // Required
+//   renderer: 'svg', // Required
+//   loop: true, // Optional
+//   autoplay: true, // Optional
+//   path: closedAnimation // Required
+// });
 
-    <div className="accordion-right">
-      <div
-        className={"accordion-hover"}
-        onClick={() => goToSection(current)}
-      >
-        {/* <ReactAccordionIcon valid={section.valid} /> */}
-        <div>{section.closed}</div>
-        {/* {section.valid && (
-          <a
-            className={"accordion-hover"}
-            onClick={() => goToSection(current)}
-          >
-            edit
-          </a>
-        )} */}
+export default class ClosedSection extends React.Component {
+ 
+
+  render() {
+    const {
+      section,
+      current,
+      total,
+      goToSection,
+      includeStepNumbers
+    } = this.props
+
+    const defaultOptions = {
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+      }
+    };
+
+    return (
+      <div className={`section-closed`}>
+      {includeStepNumbers && (
+        <div className="accordion-left">
+          <hr width="1" size="500" className={current === 0 ? "hide" : ""} />
+          <div className="circle-closed" id="lottie">
+            {/* {section.valid && <i className="fa fa-check" />}
+            {!section.valid && <i className="fa fa-times" />} */}
+                        <Lottie options={defaultOptions}
+              height={60}
+              width={60}
+              />
+            
+          </div>
+          <hr
+            width="1"
+            size="500"
+            className={current === total - 1 ? "hide" : ""}
+          />
+        </div>
+        
+      )}
+
+      <div className="accordion-right" onClick={() => goToSection(current)}>
+        {section.closed}
       </div>
     </div>
-  </div>
-);
+    );
+  }
+}
 
 ClosedSection.propTypes = {
   section: PropTypes.object.isRequired,
@@ -54,4 +73,3 @@ ClosedSection.propTypes = {
   goToSection: PropTypes.func.isRequired,
   includeStepNumbers: PropTypes.bool
 };
-export default ClosedSection;
