@@ -5,15 +5,25 @@ import * as animationData from "assets/lottie/round.json";
 
 import "./index";
 
-
 export default class ClosedSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleGoToSection = this.handleGoToSection.bind(this);
+  }
+
+  handleGoToSection() {
+    const { goToSection, current } = this.props;
+    goToSection(current);
+  }
+
   render() {
     const {
       section,
       current,
       total,
       goToSection,
-      includeStepNumbers
+      includeStepNumbers,
+      changingSection
     } = this.props;
 
     const defaultOptions = {
@@ -31,7 +41,7 @@ export default class ClosedSection extends React.Component {
           <div className="accordion-left">
             <hr width="1" size="500" className={current === 0 ? "hide" : ""} />
             <div className="circle-closed" id="lottie">
-              <Lottie options={defaultOptions} height={60} width={60} />
+              <Lottie options={defaultOptions} height={60} width={60} isStopped={changingSection}/>
             </div>
             <hr
               width="1"
@@ -41,7 +51,7 @@ export default class ClosedSection extends React.Component {
           </div>
         )}
 
-        <div className="accordion-right" onClick={() => goToSection(current)}>
+        <div className="accordion-right" onClick={this.handleGoToSection}>
           {section.closed}
         </div>
       </div>

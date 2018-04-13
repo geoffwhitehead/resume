@@ -12,19 +12,33 @@ export class Accordion extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      show: true
+      show: true,
+      changingSection: false
     };
     this.handleNextSection = this.handleNextSection.bind(this);
     this.handleGoToSection = this.handleGoToSection.bind(this);
+    this.handleChangingSection = this.handleChangingSection.bind(this);
+    this.transitionDuration = 1000;
   }
 
   handleNextSection() {
     const { onGoToSection, currentSection } = this.props;
     onGoToSection(currentSection + 1);
+    this.handleChangingSection();
+  }
+
+  handleChangingSection() {
+    this.setState({
+      changingSection: true
+    });
+    setTimeout(() => {
+      this.setState({changingSection: false});
+    }, this.transitionDuration);
   }
 
   handleGoToSection(sectionIndex) {
     this.props.onGoToSection(sectionIndex);
+    this.handleChangingSection();
   }
 
   renderedSections() {
@@ -56,6 +70,7 @@ export class Accordion extends React.PureComponent {
       } else {
         sec = (
           <ClosedSection
+            changingSection={this.state.changingSection}
             key={`closed-${section.id}`}
             section={section}
             current={i}
@@ -69,7 +84,7 @@ export class Accordion extends React.PureComponent {
         <TransitionGroup className="accordion">
           <CSSTransition
             classNames="accordion"
-            timeout={1000}
+            timeout={this.transitionDuration}
             key={`section-${section.id}-${state}`}
           >
             {sec}

@@ -6,15 +6,9 @@ import { Element } from "react-scroll";
 
 import "./index";
 
-let timer;
-
 class OpenSection extends React.PureComponent {
   constructor(props) {
     super(props);
-  }
-
-  componentWillUnmount() {
-    clearTimeout(timer);
   }
 
   render() {
