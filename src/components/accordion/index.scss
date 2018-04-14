@@ -1,5 +1,3 @@
-@import '../../styles/styles.scss';
-
 .accordion-wrapper {
   .circle-open {
     margin: 0 auto;
@@ -43,7 +41,7 @@
       z-index: -1;
       margin: 0 auto;
       border-width: 0px;
-      background-color: $BORDER_COLOR;
+      background-color: #dddfe2;
     }
     .hide {
       background-color: white;
@@ -61,7 +59,7 @@
       z-index: -1;
       margin: 0 auto;
       border-width: 0px;
-      background-color: $BORDER_COLOR;
+      background-color: #dddfe2;
     }
     .hide {
       background-color: transparent;
