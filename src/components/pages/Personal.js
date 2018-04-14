@@ -2,12 +2,12 @@ import React from "react";
 import { Grid, Image, List, Icon } from "semantic-ui-react";
 import Avatar from "assets/avatar.jpeg";
 import Lottie from "react-lottie";
-import * as animationData from "assets/lottie/round.json";
+import * as animationData from "assets/lottie/react.json";
+import "./Personal.scss";
 
 export class Personal extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isStopped: false, isPaused: false };
   }
   render() {
     const defaultOptions = {
@@ -59,19 +59,13 @@ export class Personal extends React.Component {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <h3>
+          <h3 className="synopsis">
             Experienced software developer focused in Node, React, Redux, Sagas,
-            Jest, Enzyme, CI, and CD.
+            Jest, Enzyme, CI / CD.
           </h3>
         </Grid.Row>
-        <Grid.Row>
-          <Lottie
-            options={defaultOptions}
-            height={400}
-            width={400}
-            isStopped={this.state.isStopped}
-            isPaused={this.state.isPaused}
-          />
+        <Grid.Row style={{ opacity: 0.3 }}>
+          <Lottie options={defaultOptions} height={100} width={100} />
         </Grid.Row>
       </Grid>
     );

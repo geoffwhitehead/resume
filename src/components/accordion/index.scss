@@ -1,82 +1,91 @@
 @import '../../styles/styles.scss';
 
 .accordion-wrapper {
-    .circle-open {
-        margin: 0 auto;
-        width:80px;
-        height:80px;
-        border-radius:40px;
-        font-size:12px;
-        color:black;
-        line-height:80px;
-        text-align:center;
-        z-index: 1;
-        overflow: hidden;
+  .circle-open {
+    margin: 0 auto;
+    width:80px;
+    height:80px;
+    border-radius:40px;
+    font-size:12px;
+    color:black;
+    line-height:80px;
+    text-align:center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .circle-closed {
+    overflow: hidden;
+    margin: 0 auto;
+    width:60px;
+    height:80px;
+    line-height:60px;
+    text-align:left;
+    z-index: 1;
+    opacity: 0.5;
+    & > div {
+      &:hover {
+        cursor: pointer;
+      }
+      &:focus {
+        outline: none;
+      }
     }
-    .circle-closed {
-        overflow: hidden;
-        margin: 0 auto;
-        width:60px;
-        height:80px;
-        line-height:60px;
-        text-align:left;
-        z-index: 1;
-    }
-    
-    .section-open {
-        overflow: hidden;
-        background-color: white;
-        display: flex;
+  }
+  
+  .section-open {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
 
-        hr {
-            // height: calc(50% - 40px);
-            height: calc(50%);
-            
-            z-index: -1;
-            margin: 0 auto;
-            border-width: 0px;
-            background-color: $BORDER_COLOR;
-        }
-        .hide {
-            background-color: white;
-        }
-        z-index: 50;
+    hr {
+      // height: calc(50% - 40px);
+      height: calc(50%);
+      z-index: -1;
+      margin: 0 auto;
+      border-width: 0px;
+      background-color: $BORDER_COLOR;
     }
-    
-    .section-closed {
-        overflow: hidden;
-        display: flex;
-        hr {
-            height: calc(50% - 20px);
-            
-            z-index: -1;
-            margin: 0 auto;
-            border-width: 0px;
-            background-color: $BORDER_COLOR;
-        }
-        .hide {
-            background-color: transparent;
-        }
+    .hide {
+      background-color: white;
     }
-    
-    .accordion-left {
-       min-width: 100px;
-       strong {
-           font-size: 26px;
-       }
+    z-index: 50;
+  }
+  
+  .section-closed {
+    font-family: 'Open sans', sans-serif;
+    overflow: hidden;
+    display: flex;
+    hr {
+      height: calc(50% - 20px);
+      
+      z-index: -1;
+      margin: 0 auto;
+      border-width: 0px;
+      background-color: $BORDER_COLOR;
     }
-    .accordion-right {
-        margin-top: 20px;
-       padding: 15px 15px 15px 15px;
-       width: 100%;
-       position: relative;
-       & > button {
-           margin:  20px 0px 0px 27px;
-       }
-           
-        line-height:40px;
-        &:hover{
-            cursor: pointer;
-        }
+    .hide {
+      background-color: transparent;
     }
+  }
+  
+  .accordion-left {
+    min-width: 100px;
+    strong {
+      font-size: 26px;
+    }
+  }
+  .accordion-right {
+    margin-top: 20px;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    position: relative;
+    & > button {
+      margin:  20px 0px 0px 27px;
+    }
+        
+    line-height:40px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }

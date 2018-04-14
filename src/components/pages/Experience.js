@@ -22,9 +22,7 @@ export const Experience = () => {
           </List.Description>
           <List.List className="gold">
             <List.Item>Tech: React, Redux, Sagas, React Router 4</List.Item>
-            <List.Item>
-              Tooling: Webpack 3/ 4, Git verison control, eslint{" "}
-            </List.Item>
+            <List.Item>Tooling: Webpack 3/ 4, Git</List.Item>
             <List.Item>Testing Framework: Jest / Enzyme </List.Item>
             <List.Item>CI/CD: CircleCI </List.Item>
           </List.List>
@@ -41,7 +39,7 @@ export const Experience = () => {
           </List.Description>
           <List.List className="gold">
             <List.Item>Tech: Ruby, Rails</List.Item>
-            <List.Item>Tooling: Git verison control, Jira </List.Item>
+            <List.Item>Tooling: Git, Jira </List.Item>
             <List.Item>Testing Framework: Rspec </List.Item>
             <List.Item>CI/CD: Codeship </List.Item>
           </List.List>

@@ -32,7 +32,7 @@ export class Accordion extends React.PureComponent {
       changingSection: true
     });
     setTimeout(() => {
-      this.setState({changingSection: false});
+      this.setState({ changingSection: false });
     }, this.transitionDuration);
   }
 

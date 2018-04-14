@@ -6,6 +6,8 @@ import "./index.scss";
 export const NavbarDisplay = () => (
   <Menu fixed="top" className="navbar">
     <Menu.Item className="name">Geoff Whitehead</Menu.Item>
-    <Menu.Item position="right">JavaScript Developer</Menu.Item>
+    <Menu.Item position="right" className="role">
+      JavaScript Developer
+    </Menu.Item>
   </Menu>
 );

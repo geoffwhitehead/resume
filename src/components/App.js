@@ -7,9 +7,10 @@ import {
   Experience,
   Projects,
   OpenSource,
-  Personal
+  Personal,
+  Hobbies,
+  Learning
 } from "components/pages";
-
 import "semantic-ui-css/semantic.min.css";
 import "./App.scss";
 
@@ -30,7 +31,7 @@ export class App extends Component {
     const accordionSections = [
       {
         id: 1,
-        closed: <h3>Experience</h3>,
+        closed: "Experience",
         open: <Experience />
       },
       {
@@ -47,6 +48,16 @@ export class App extends Component {
         id: 4,
         closed: "Projects",
         open: <Projects />
+      },
+      {
+        id: 5,
+        closed: "Learning",
+        open: <Learning />
+      },
+      {
+        id: 6,
+        closed: "Hobbies",
+        open: <Hobbies />
       }
     ];
     return (

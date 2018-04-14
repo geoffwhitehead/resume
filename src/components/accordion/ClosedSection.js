@@ -40,8 +40,14 @@ export default class ClosedSection extends React.Component {
         {includeStepNumbers && (
           <div className="accordion-left">
             <hr width="1" size="500" className={current === 0 ? "hide" : ""} />
-            <div className="circle-closed" id="lottie">
-              <Lottie options={defaultOptions} height={60} width={60} isStopped={changingSection}/>
+            <div className="circle-closed" onClick={this.handleGoToSection}>
+              <Lottie
+                options={defaultOptions}
+                height={60}
+                width={60}
+                isStopped={changingSection}
+                className="asdasdsad"
+              />
             </div>
             <hr
               width="1"

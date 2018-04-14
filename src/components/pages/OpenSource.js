@@ -29,6 +29,12 @@ export const OpenSource = () => {
               npmjs.com/package/react-alerts-lite
             </a>
           </List.Description>
+          <List.List className="gold">
+            <List.Item>Tech: React, react-transition-group</List.Item>
+            <List.Item>Tooling: Webpack 4</List.Item>
+            <List.Item>Testing Framework: Jest / Enzyme </List.Item>
+            <List.Item>CI/CD: CircleCI </List.Item>
+          </List.List>
         </List.Content>
       </List.Item>
     </List>
