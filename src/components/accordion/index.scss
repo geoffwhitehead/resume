@@ -64,6 +64,11 @@
     .hide {
       background-color: transparent;
     }
+    .accordion-right{
+      &:hover{
+        cursor: pointer;
+      }
+    }
   }
   
   .accordion-left {
@@ -82,8 +87,6 @@
     }
         
     line-height:40px;
-    &:hover{
-      cursor: pointer;
-    }
+
   }
 }

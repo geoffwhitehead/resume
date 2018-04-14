@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "semantic-ui-react";
+import { Button } from "components/common/Button";
 import { Element } from "react-scroll";
 // import { ReactAccordionIcon } from "./AccordionIcon";
 

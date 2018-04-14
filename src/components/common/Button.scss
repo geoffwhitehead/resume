@@ -1,0 +1,23 @@
+.button-std {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  transition: all .15s ease;
+  line-height: 35px;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 14px;
+  // color: rgb(56, 56, 56);
+  color: white;
+  // background: rgb(194, 231, 239);
+  background-color: #6772e5;
+  border-radius: 4px;
+  font-size: 14px;
+  border-style: none;
+  // font-weight: 600;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    cursor: pointer;
+    background-color: #7795f8;
+  }
+
+}
