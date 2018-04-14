@@ -24,7 +24,7 @@ export const Projects = () => {
             Dissertation
           </List.Description>
           <List.List className="gold">
-            <List.Item>Tech: Angular 1, Cytoscape.js</List.Item>
+            <List.Item>Tech: JavaScript, Angular 1, Cytoscape.js</List.Item>
             <List.Item>Tooling: Gulp</List.Item>
           </List.List>
         </List.Content>

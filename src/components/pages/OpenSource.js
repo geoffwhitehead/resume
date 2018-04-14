@@ -30,7 +30,9 @@ export const OpenSource = () => {
             </a>
           </List.Description>
           <List.List className="gold">
-            <List.Item>Tech: React, react-transition-group</List.Item>
+            <List.Item>
+              Tech: JavaScript (ES6/ES7), React, react-transition-group
+            </List.Item>
             <List.Item>Tooling: Webpack 4</List.Item>
             <List.Item>Testing Framework: Jest / Enzyme </List.Item>
             <List.Item>CI/CD: CircleCI </List.Item>

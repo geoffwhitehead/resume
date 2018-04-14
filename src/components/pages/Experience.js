@@ -21,7 +21,9 @@ export const Experience = () => {
             lead.
           </List.Description>
           <List.List className="gold">
-            <List.Item>Tech: React, Redux, Sagas, React Router 4</List.Item>
+            <List.Item>
+              Tech: JavaScript (ES6/ES7), React, Redux, Sagas, React Router 4
+            </List.Item>
             <List.Item>Tooling: Webpack 3/ 4, Git</List.Item>
             <List.Item>Testing Framework: Jest / Enzyme </List.Item>
             <List.Item>CI/CD: CircleCI </List.Item>
