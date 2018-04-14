@@ -20,7 +20,7 @@ export class Personal extends React.Component {
     };
 
     return (
-      <Grid columns={2} centered>
+      <Grid columns={2} centered className="page-personal">
         <Grid.Row>
           <Grid.Column width={8} style={{ textAlign: "-webkit-right" }}>
             <Image src={Avatar} size="medium" rounded />
