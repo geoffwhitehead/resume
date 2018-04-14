@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "lint": "./node_modules/eslint/bin/eslint.js ./src/",
-    "lint-fix": "./node_modules/eslint/bin/eslint.js --fix ./src"
+    "lint-fix": "./node_modules/eslint/bin/eslint.js --fix ./src",
+    "build": "webpack"
   },
   "dependencies": {
     "bodymovin": "^4.13.0",
