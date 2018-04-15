@@ -11,7 +11,7 @@ import {
   Hobbies,
   Learning
 } from "components/pages";
-import "semantic-ui-css/semantic.min.css";
+
 import "./App.scss";
 
 export class App extends Component {

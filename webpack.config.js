@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const path = require("path");
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
@@ -121,6 +122,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
+    }),
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        compress: {
+          drop_console: true,
+        },
+        dead_code: true,
+      },
     })
   ]
 };
