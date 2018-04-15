@@ -78,7 +78,7 @@ export const Projects = () => {
         <List.Content>
           <List.Header
             as="a"
-            href={"https://github.com/geoffwhitehead/game-engine"}
+            href={"https://github.com/geoffwhitehead/collision-detection"}
           >
             Collision Detection
           </List.Header>
