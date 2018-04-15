@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --open",
     "lint": "./node_modules/eslint/bin/eslint.js ./src/",
     "lint-fix": "./node_modules/eslint/bin/eslint.js --fix ./src",
-    "build": "webpack --mode production --optimize-minimize"
+    "build": "rimraf ./dist && webpack --mode production --optimize-minimize"
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -39,6 +39,7 @@
     "node-sass": "^4.8.3",
     "postcss-loader": "^2.1.3",
     "prettier": "^1.11.1",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7",
     "semantic-ui-react": "^0.79.1",
     "style-loader": "^0.20.3",
