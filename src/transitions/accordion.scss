@@ -3,18 +3,36 @@
 .accordion-enter {
   opacity: 0;
   max-height: 0px;
+  .list {
+    opacity: 0;
+    transform: translateX(60px)
+  }
 }
 .accordion-enter-active {
   opacity: 1;
-  max-height: 1000px;
-  transition: max-height 1000ms ease-in, opacity 1000ms ease-in ;
+  max-height: 900px;
+  .list {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: transform 800ms ease-in, opacity 600ms ease-in;
+  }
+  transition: max-height 1000ms ease-in, opacity 1000ms ease-in;
 }
 .accordion-exit {
   opacity: 1;
+  .list {
+    opacity: 1;
+    transform: translateX(0px)
+  }
   max-height: 1000px;
 }
 .accordion-exit-active {
   opacity: 0;
   max-height: 0px;
+  .list {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: transform 800ms ease-in, opacity 600ms ease-in;
+  }
   transition: max-height 1000ms ease-in, opacity 1000ms ease-in;
 }

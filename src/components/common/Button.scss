@@ -22,5 +22,7 @@
     background-color: rgb(161, 224, 210);
     // background-color: #7795f8;
   }
-
+  &:focus {
+    outline: none;
+  }
 }

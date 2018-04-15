@@ -16,7 +16,7 @@ export class WithScrolling extends React.Component {
   scroll() {
     const { scrollElementName, options } = this.props;
     scroller.scrollTo(scrollElementName, {
-      duration: 1000,
+      duration: 300,
       smooth: true,
       offset: -100,
       ...options

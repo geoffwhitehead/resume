@@ -52,7 +52,7 @@ export class Accordion extends React.PureComponent {
           <WithScrolling
             scrollElementName="openSectionScrollElement"
             scrollOnMount={true}
-            delay={300}
+            delay={400}
             offset={-200}
           >
             {() => (
