@@ -14,9 +14,9 @@
   .list {
     opacity: 1;
     transform: translateX(0px);
-    transition: transform 800ms ease-in, opacity 600ms ease-in;
+    transition: transform 800ms ease-in-out, opacity 600ms ease-in;
   }
-  transition: max-height 1000ms ease-in, opacity 1000ms ease-in;
+  transition: max-height 1000ms ease-in-out, opacity 1000ms ease-in;
 }
 .accordion-exit {
   opacity: 1;
@@ -32,7 +32,7 @@
   .list {
     opacity: 0;
     transform: translateX(60px);
-    transition: transform 800ms ease-in, opacity 600ms ease-in;
+    transition: transform 800ms ease-in-out, opacity 600ms ease-in;
   }
-  transition: max-height 1000ms ease-in, opacity 1000ms ease-in;
+  transition: max-height 1000ms ease-in-out, opacity 1000ms ease-in;
 }
