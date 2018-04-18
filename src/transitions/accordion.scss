@@ -3,20 +3,20 @@
 .accordion-enter {
   opacity: 0;
   max-height: 0px;
-  .list {
-    opacity: 0;
-    transform: translateX(60px)
-  }
+  // .list {
+  //   opacity: 0;
+  //   transform: translateX(60px)
+  // }
 }
 .accordion-enter-active {
   opacity: 1;
   max-height: 900px;
-  .list {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: transform 800ms ease-in-out, opacity 600ms ease-in;
-  }
-  transition: max-height 1000ms ease-in-out, opacity 1000ms ease-in;
+  // .list {
+  //   opacity: 1;
+  //   transform: translateX(0px);
+  //   transition: transform 800ms ease-in-out, opacity 600ms ease-in;
+  // }
+  transition: max-height 700ms ease-in-out, opacity 700ms ease-in;
 }
 .accordion-exit {
   opacity: 1;
@@ -29,10 +29,10 @@
 .accordion-exit-active {
   opacity: 0;
   max-height: 0px;
-  .list {
-    opacity: 0;
-    transform: translateX(60px);
-    transition: transform 800ms ease-in-out, opacity 600ms ease-in;
-  }
-  transition: max-height 1000ms ease-in-out, opacity 1000ms ease-in;
+  // .list {
+  //   opacity: 0;
+  //   transform: translateX(60px);
+  //   transition: transform 800ms ease-in-out, opacity 600ms ease-in;
+  // }
+  transition: max-height 700ms ease-in-out, opacity 700ms ease-in;
 }
