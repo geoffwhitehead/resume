@@ -11,7 +11,7 @@ export const Experience = () => {
           <List.Description as="p">2017 August - Present</List.Description>
           <List.Description as="p">Newcastle upon Tyne</List.Description>
           <List.Description as="p">
-            Developed an dashboard onboarding system for managing flight delay
+            Developed a dashboard onboarding system for managing flight delay
             claim submissions. The system targeted businesses and individuals
             and included roles, registration, reporting, claim submissions, user
             management, and user profiles. Sole front end developer of the app
