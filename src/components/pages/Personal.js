@@ -61,7 +61,8 @@ export class Personal extends React.Component {
         <Grid.Row>
           <h3 className="synopsis">
             Experienced software developer focused in Node, JavaScript(ES6/ES7),
-            React, Redux, Sagas, Jest, Enzyme, CI / CD.
+            React, Redux, Sagas, Jest, Enzyme, CI / CD, Webpack. Interested in
+            blockchain app development - Etherium, Solidity, Web3.
           </h3>
         </Grid.Row>
         <Grid.Row style={{ opacity: 0.3 }}>

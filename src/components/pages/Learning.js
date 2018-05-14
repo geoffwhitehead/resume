@@ -8,6 +8,14 @@ export const Learning = () => {
         <List.Icon name="book" size="large" verticalAlign="middle" />
         <List.Content>
           <List.Header as="h3">
+            2018 Ethereum and Solidity: The Complete Developer's Guide (Udemy)
+          </List.Header>
+        </List.Content>
+      </List.Item>
+      <List.Item>
+        <List.Icon name="book" size="large" verticalAlign="middle" />
+        <List.Content>
+          <List.Header as="h3">
             2018 Advanced Redux Saga (Pluralsight)
           </List.Header>
         </List.Content>

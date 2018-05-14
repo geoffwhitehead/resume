@@ -9,23 +9,18 @@ export const Projects = () => {
         <List.Content>
           <List.Header
             as="a"
-            href={"https://github.com/geoffwhitehead/metagenomics-project"}
+            href={"https://github.com/geoffwhitehead/solidity-react-kickstart"}
           >
-            metagenomics-tool
+            solidity-react-kickstart
           </List.Header>
           <List.Description as="p">
-            Tool i created to allow single gene analysis from any gene in the
-            dataset obtained from "A human gut microbial gene catalogue
-            established by metagenomic sequencing" by Junjie Qin1, Ruiqiang Li1,
-            Jeroen Raes et al.
-          </List.Description>
-          <List.Description as="p">
-            <Icon name="graduation" />
-            Dissertation
+            Etherium solidity blockchain project with React built with Next.js.
+            Emulates kickstarter using contracts.
           </List.Description>
           <List.List className="gold">
-            <List.Item>Tech: JavaScript, Angular 1, Cytoscape.js</List.Item>
-            <List.Item>Tooling: Gulp</List.Item>
+            <List.Item>
+              Tech: JavaScript, Solidity, React, Next.js, Web3
+            </List.Item>
           </List.List>
         </List.Content>
       </List.Item>
@@ -35,21 +30,54 @@ export const Projects = () => {
         <List.Content>
           <List.Header
             as="a"
-            href={"https://github.com/geoffwhitehead/uROV-control-system"}
+            href={"https://github.com/geoffwhitehead/solidity-react-lottery"}
           >
-            Underwater ROV control system
+            solidity-react-lottery
           </List.Header>
           <List.Description as="p">
-            Control system for an electronics project to create an underwater
-            ROV. Used an Arduino Mega to control 3 seperate bilge pumps
-            converted into motors for vertical and horizontal propulsion, an
-            onboard 2 axis camera, temperature sensor, magnometer,
-            accelerometer, gyrometer, depth guage, and lights. It also
-            communicated with a surface module providing power, joystick
-            control, and visuals.
+            Solidity lottery contract with react front-end. Allows users to
+            enter and win a lottery.
           </List.Description>
           <List.List className="gold">
-            <List.Item>Tech: C / C++, Arduino</List.Item>
+            <List.Item>Tech: JavaScript, Solidity, React, Web3</List.Item>
+          </List.List>
+        </List.Content>
+      </List.Item>
+
+      <List.Item>
+        <List.Icon name="code" size="large" verticalAlign="middle" />
+        <List.Content>
+          <List.Header
+            as="a"
+            href={"https://github.com/geoffwhitehead/solidity-lottery"}
+          >
+            solidity-lottery
+          </List.Header>
+          <List.Description as="p">
+            A solidity Lottery contract that allows users to enter a lottery and
+            the creator to pick a winner and restart contract
+          </List.Description>
+          <List.List className="gold">
+            <List.Item>Tech: Solidity, Ganache, Web3</List.Item>
+          </List.List>
+        </List.Content>
+      </List.Item>
+
+      <List.Item>
+        <List.Icon name="code" size="large" verticalAlign="middle" />
+        <List.Content>
+          <List.Header
+            as="a"
+            href={"https://github.com/geoffwhitehead/solidity-lottery"}
+          >
+            solidity-lottery
+          </List.Header>
+          <List.Description as="p">
+            A solidity Lottery contract that allows users to enter a lottery and
+            the creator to pick a winner and restart contract
+          </List.Description>
+          <List.List className="gold">
+            <List.Item>Tech: Solidity, Ganache, Web3</List.Item>
           </List.List>
         </List.Content>
       </List.Item>
@@ -69,30 +97,6 @@ export const Projects = () => {
           </List.Description>
           <List.List className="gold">
             <List.Item>Tech: C++, OpenGL, Box2D</List.Item>
-          </List.List>
-        </List.Content>
-      </List.Item>
-
-      <List.Item>
-        <List.Icon name="code" size="large" verticalAlign="middle" />
-        <List.Content>
-          <List.Header
-            as="a"
-            href={"https://github.com/geoffwhitehead/collision-detection"}
-          >
-            Collision Detection
-          </List.Header>
-          <List.Description as="p">
-            This was created as an alternative to the problems encountered using
-            dynamic casting for collision detection with shape types. The
-            visitor design pattern is one of the behavioural design patterns
-            from the Gang of Four.
-            <a href={"http://www.blackwasp.co.uk/Visitor.aspx"}>
-              blackwasp.co.uk/Visitor.aspx
-            </a>.
-          </List.Description>
-          <List.List className="gold">
-            <List.Item>Tech: C++</List.Item>
           </List.List>
         </List.Content>
       </List.Item>
