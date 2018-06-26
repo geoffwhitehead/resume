@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid, Image, List, Icon } from "semantic-ui-react";
+import pdfResume from "assets/resume.pdf";
 import Avatar from "assets/avatar.jpeg";
 import Lottie from "react-lottie";
 import * as animationData from "assets/lottie/react.json";
@@ -52,6 +53,14 @@ export class Personal extends React.Component {
                 <List.Content>
                   <a href="https://www.linkedin.com/in/geoffwhitehead/">
                     LinkedIn
+                  </a>
+                </List.Content>
+              </List.Item>
+              <List.Item>
+                <List.Icon name="download" />
+                <List.Content>
+                  <a href={pdfResume} download>
+                    Download resume
                   </a>
                 </List.Content>
               </List.Item>

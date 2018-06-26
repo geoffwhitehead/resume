@@ -11,21 +11,35 @@ export const Experience = () => {
           <List.Description as="p">2017 August - Present</List.Description>
           <List.Description as="p">Newcastle upon Tyne</List.Description>
           <List.Description as="p">
-            Developed a dashboard onboarding system for managing flight delay
-            claim submissions. The system targeted businesses and individuals
-            and included roles, registration, reporting, claim submissions, user
-            management, and user profiles. Sole front end developer of the app
-            from creation to release in April 2018. Implemented CI / CD build
-            process using CircleCI, entire testing framework, and all tech
-            decisions. Liased directly with back-end, designers, and product
-            lead.
+            <ul>
+              <li>
+                Developed a dashboard onboarding system for managing flight
+                delay claim submissions. Led tech decisions related to the front
+                end from creation to release in April 2018.
+              </li>
+              <li>Led the implementation of a CD build process for CoPilot</li>
+              <li>
+                Led the implementation of testing framework of CoPilot using
+                Enzyme / Jest
+              </li>
+              <li>
+                Introduced the company to Redux Sagas which has replaced thunks
+                and is now used extensively in multiple projects
+              </li>
+              <li>
+                Most recently tasked with recreating the entire front-end client
+                onboarding portal in React and integrating with a new API,
+                whilst also adding language support for multiple locales.
+              </li>
+            </ul>
           </List.Description>
           <List.List className="gold">
             <List.Item>
-              Tech: JavaScript (ES6/ES7), React, Redux, Sagas, React Router 4
+              Tech: JavaScript (ES6/ES7), Next.js, React, Redux, Sagas, CSS
+              Modules, SCSS
             </List.Item>
-            <List.Item>Tooling: Webpack 3/ 4, Git</List.Item>
-            <List.Item>Testing Framework: Jest / Enzyme </List.Item>
+            <List.Item>Tooling: Webpack 3 / 4, Git</List.Item>
+            <List.Item>Testing: Jest / Enzyme </List.Item>
             <List.Item>CI/CD: CircleCI </List.Item>
           </List.List>
         </List.Content>
