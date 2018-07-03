@@ -31,11 +31,8 @@ export const OpenSource = () => {
           </List.Description>
           <List.List className="gold">
             <List.Item>
-              Tech: JavaScript (ES6/ES7), React, react-transition-group
+              Tech: JavaScript (ES6/ES7), React, Webpack, Jest, Enzyme, CircleCI
             </List.Item>
-            <List.Item>Tooling: Webpack 4</List.Item>
-            <List.Item>Testing Framework: Jest / Enzyme </List.Item>
-            <List.Item>CI/CD: CircleCI </List.Item>
           </List.List>
         </List.Content>
       </List.Item>
