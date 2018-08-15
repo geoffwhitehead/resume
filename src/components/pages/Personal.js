@@ -7,9 +7,6 @@ import * as animationData from "assets/lottie/react.json";
 import "./Personal.scss";
 
 export class Personal extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const defaultOptions = {
       loop: true,
@@ -57,6 +54,12 @@ export class Personal extends React.Component {
                 </List.Content>
               </List.Item>
               <List.Item>
+                <List.Icon name="codepen" />
+                <List.Content>
+                  <a href="https://codepen.io/geoffwhitehead/">CodePen</a>
+                </List.Content>
+              </List.Item>
+              <List.Item>
                 <List.Icon name="download" />
                 <List.Content>
                   <a href={pdfResume} download>
@@ -69,9 +72,8 @@ export class Personal extends React.Component {
         </Grid.Row>
         <Grid.Row>
           <h3 className="synopsis">
-            Experienced software developer focused in Node, JavaScript(ES6/ES7),
-            React, Redux, Sagas, Jest, Enzyme, CI / CD, Webpack. Interested in
-            blockchain app development - Etherium, Solidity, Web3.
+            Software developer skilled in JavaScript(ES6/ES7), React, Node,
+            Redux, Sagas, Jest, Enzyme.
           </h3>
         </Grid.Row>
         <Grid.Row style={{ opacity: 0.3 }}>

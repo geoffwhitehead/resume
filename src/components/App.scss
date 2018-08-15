@@ -15,5 +15,10 @@
   a:hover {
     color: #32325d;
   }
+  @media screen and (max-width: 600px) {
+    .accordion-wrapper {
+      margin: 0px 0px 100px 0px;
+    }
+  }
 }
 

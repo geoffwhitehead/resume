@@ -1,7 +1,7 @@
 .accordion-wrapper {
   .circle-open {
     margin: 0 auto;
-    width:80px;
+    width:60px;
     height:80px;
     border-radius:40px;
     font-size:12px;
@@ -93,5 +93,11 @@
       margin:  20px 0px 0px 27px;
     }  
     line-height:40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .accordion-left {
+      min-width: 60px;
+    }
   }
 }

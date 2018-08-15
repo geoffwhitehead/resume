@@ -8,8 +8,8 @@ import {
   Projects,
   OpenSource,
   Personal,
-  Hobbies,
-  Learning
+  Learning,
+  CodePen
 } from "components/pages";
 
 import "./App.scss";
@@ -51,13 +51,13 @@ export class App extends Component {
       },
       {
         id: 5,
-        closed: "Learning",
-        open: <Learning />
+        closed: "Examples / CodePen",
+        open: <CodePen />
       },
       {
         id: 6,
-        closed: "Hobbies",
-        open: <Hobbies />
+        closed: "Learning",
+        open: <Learning />
       }
     ];
     return (

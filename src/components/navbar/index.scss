@@ -16,6 +16,15 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .navbar .name.name.name {
+    font-size: 16px;
+	}
+	.navbar .role.role.role {
+    font-size: 12px;
+  }
+}
+
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%

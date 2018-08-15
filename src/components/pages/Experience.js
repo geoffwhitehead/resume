@@ -11,7 +11,7 @@ export const Experience = () => {
           <List.Description as="p">
             Aug/2017 - present, Newcastle upon Tyne
           </List.Description>
-          <List.Description as="p">
+          <List.Description>
             <ul>
               <li>
                 Introduced modern react design patterns such as Compound
