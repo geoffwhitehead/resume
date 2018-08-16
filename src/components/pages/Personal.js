@@ -72,7 +72,7 @@ export class Personal extends React.Component {
         </Grid.Row>
         <Grid.Row>
           <h3 className="synopsis">
-            Software developer skilled in JavaScript(ES6/ES7), React, Node,
+            Software developer experienced in JavaScript(ES6/ES7), React, Node,
             Redux, Sagas, Jest, Enzyme.
           </h3>
         </Grid.Row>

@@ -49,11 +49,11 @@ export class App extends Component {
         closed: "Projects",
         open: <Projects />
       },
-      {
-        id: 5,
-        closed: "Examples / CodePen",
-        open: <CodePen />
-      },
+      // {
+      //   id: 5,
+      //   closed: "Examples / CodePen",
+      //   open: <CodePen />
+      // },
       {
         id: 6,
         closed: "Learning",
